@@ -1,3 +1,8 @@
+#Avoid temp-files
+*~
+
+#Auto-generated settings
+
 *.rbc
 capybara-*.html
 .rspec
