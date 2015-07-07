@@ -1,5 +1,7 @@
-#Avoid temp-files
+#Avoid temp-files for vim editor
 *~
+*.swp
+*.swo
 
 #Auto-generated settings
 
