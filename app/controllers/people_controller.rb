@@ -11,14 +11,15 @@ class PeopleController < ApplicationController
   def create
     @person = Person.new(person_params)
     if @person.save
-      #SuCCESS!
+      flash[:success] = "Welcome to the Sample Application!"
+      redirect_to @person
     else
       render 'new'
     end
   end
   
   private
-  def person_params
-    params.require(:person).permit(:name, :email, :password, :password_confirmation)
-  end
+    def person_params
+      params.require(:person).permit(:name, :email, :password, :password_confirmation)
+    end
 end
