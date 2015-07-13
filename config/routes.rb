@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   root           'static_pages#home'
   get 'about' => 'static_pages#about'
   get 'help'  => 'static_pages#help'
-  get 'signup'=> 'users#new'
+  get 'signup'=> 'people#new'
 
   resources :microposts
   resources :users
+  resources :people
 end
